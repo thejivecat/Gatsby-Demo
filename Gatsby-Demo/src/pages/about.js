@@ -2,6 +2,7 @@
 
 import React from 'react'
 import { Link } from 'gatsby'
+import Footer from '../components/footer'
 
 const AboutPage = () => {
   return (
@@ -13,6 +14,7 @@ const AboutPage = () => {
         snowboarding as my main form of activity. It's a fun area to be in!
       </p>
       <p>Need a developer? <Link to="/contact">Contact me!</Link></p>
+      <Footer/>
     </div>
   )
 }

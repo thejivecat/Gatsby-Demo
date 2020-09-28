@@ -1,6 +1,7 @@
 //Create contact page. Include page title and contact details (fake obviously, can't have people bombing my number)
 
 import React from 'react'
+import Footer from '../components/footer'
 
 const ContactPage = () => {
   return (
@@ -14,6 +15,7 @@ const ContactPage = () => {
                  Washington, DC 20500
       </p>
       <p>Link to github: <a href="https://github.com/thejivecat" target="_blank">https://github.com/thejivecat</a></p>
+      <Footer />
     </div>
   )
 }
