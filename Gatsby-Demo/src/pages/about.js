@@ -1,6 +1,7 @@
 //Create an about page. include page title and bio.
 
 import React from 'react'
+import { Link } from 'gatsby'
 
 const AboutPage = () => {
   return (
@@ -11,6 +12,7 @@ const AboutPage = () => {
         including Flagstaff, Flatirons, and Boulder Canyon. I also like to ride my mountain bike and road bike. In the winters, I take up <br />
         snowboarding as my main form of activity. It's a fun area to be in!
       </p>
+      <p>Need a developer? <Link to="/contact">Contact me!</Link></p>
     </div>
   )
 }

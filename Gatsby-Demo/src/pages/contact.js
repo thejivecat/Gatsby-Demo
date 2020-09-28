@@ -13,6 +13,7 @@ const ContactPage = () => {
                  1600 Pennsylvania Avenue NW<br />
                  Washington, DC 20500
       </p>
+      <p>Link to github: <a href="https://github.com/thejivecat" target="_blank">https://github.com/thejivecat</a></p>
     </div>
   )
 }
