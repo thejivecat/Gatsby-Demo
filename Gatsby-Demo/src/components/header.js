@@ -1,14 +1,25 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link, graphql, useStaticQuery } from 'gatsby'
+
 // import './header.module.scss' AFFECTS ALL COMPONENTS- these styles are not scoped to this component
 import headerStyles from './header.module.scss' //scopes styles to be applied directly to component
 
 const Header = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `) //tagged template literal
+
   return (
     <header className={headerStyles.header}>
       <h1>
         <Link className={headerStyles.title} to="/">
-          Gatsby Demo
+          {data.site.siteMetadata.title}
         </Link>
       </h1>
       <nav>
