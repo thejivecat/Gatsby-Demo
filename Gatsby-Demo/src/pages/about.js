@@ -2,11 +2,14 @@
 
 import React from 'react'
 import { Link } from 'gatsby'
+import Head from '../components/head'
+
 import Layout from '../components/layout'
 
 const AboutPage = () => {
   return (
     <Layout>
+      <Head title="About" />
       <h2>About Me</h2>
       <p>Hello, my name is Srujan and I am a Full-Stack software engineer living in Boulder, Colorado. In my free time, I like to play and 
         listen to music, usually anything that grooves. I also like to climb on the number of boulders and rock walls we have in the area, 
